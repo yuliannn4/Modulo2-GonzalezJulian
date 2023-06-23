@@ -22,9 +22,18 @@ public class Auto {
     String modelo; 
     String kilometraje;
     int kilometrajeIngresado;
+
+    public Auto(String marca, String modelo, String kilometraje, int kilometrajeIngresado) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.kilometraje = kilometraje;
+        this.kilometrajeIngresado = kilometrajeIngresado;
+    }//ejercicio4
+
+
     
     //con los metodos defino las acciones
-        public void mostrarDatos() {
+        public void pedirDatos() {
                 marca = (String) JOptionPane.showInputDialog(null,
                                                             "Ingrese la marca del Vehiculo",
                                                             "CARGA DE DATOS",
@@ -42,7 +51,7 @@ public class Auto {
                 
 }
     
-        public void estadoAuto(){
+        public void estadoAuto(){//ejercicio2
 
      //Pido el kilometraje y convierto a int 
       kilometraje = (String) JOptionPane.showInputDialog(null,
