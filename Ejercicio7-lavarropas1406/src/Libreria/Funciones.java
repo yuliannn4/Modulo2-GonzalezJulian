@@ -27,6 +27,72 @@ public class Funciones {
         }
     
     }
+
+    public int getKilos() {
+        return kilos;
+    }
+
+    public int getLlenadoCompleto() {
+        return llenadoCompleto;
+    }
+
+    public int getTipoDeRopa() {
+        return TipoDeRopa;
+    }
+
+    public int getLavadoCompleto() {
+        return LavadoCompleto;
+    }
+
+    public int getSecadoCompleto() {
+        return SecadoCompleto;
+    }
+
+    public int getPlanchado() {
+        return Planchado;
+    }
+
+    public int getCapacidad() {
+        return Capacidad;
+    }
+
+    public int getFin() {
+        return fin;
+    }
+
+    public void setKilos(int kilos) {
+        this.kilos = kilos;
+    }
+
+    public void setLlenadoCompleto(int llenadoCompleto) {
+        this.llenadoCompleto = llenadoCompleto;
+    }
+
+    public void setTipoDeRopa(int TipoDeRopa) {
+        this.TipoDeRopa = TipoDeRopa;
+    }
+
+    public void setLavadoCompleto(int LavadoCompleto) {
+        this.LavadoCompleto = LavadoCompleto;
+    }
+
+    public void setSecadoCompleto(int SecadoCompleto) {
+        this.SecadoCompleto = SecadoCompleto;
+    }
+
+    public void setPlanchado(int Planchado) {
+        this.Planchado = Planchado;
+    }
+
+    public void setCapacidad(int Capacidad) {
+        this.Capacidad = Capacidad;
+    }
+
+    public void setFin(int fin) {
+        this.fin = fin;
+    }//ejercicio10
+    
+    
     private void lavado(){
         llenado();
             if (llenadoCompleto == 1){
