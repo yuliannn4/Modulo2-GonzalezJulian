@@ -30,6 +30,22 @@ class Moto {
         this.patente = patente;
         this.color = color;
     }//ejercicio4
+
+    public String getCilindrada() {
+        return cilindrada;
+    }
+
+    public String getTransmision() {
+        return transmision;
+    }
+
+    public String getPatente() {
+        return patente;
+    }
+
+    public String getColor() {
+        return color;
+    }
     
     
     
@@ -43,6 +59,28 @@ class Moto {
         
         color = (String) JOptionPane.showInputDialog(null, "Ingrese la color principal: ", "Ingreso de datos", JOptionPane.QUESTION_MESSAGE, datos, null, "");
       }
+
+    public void setCilindrada(String cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+
+    public void setTransmision(String transmision) {
+        this.transmision = transmision;
+    }
+
+    public void setPatente(String patente) {
+        this.patente = patente;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }//ejercicio9
+    
+    
+    
+    
+    
+    
    
    public void ficha (){
        JOptionPane.showMessageDialog(null,
