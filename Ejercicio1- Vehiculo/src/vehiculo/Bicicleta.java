@@ -13,20 +13,28 @@ import javax.swing.JOptionPane;
  */
 class Bicicleta {
     //definiendo atributos 
-   String rodado;
-   String freno;
-   String cambios;
-   String material;
-   String accesorios;
+  protected String rodado;
+  protected String freno;
+  protected String cambios;
+  protected String material;
+  protected String accesorios;//ejercuio 9
    
        ImageIcon bici = new ImageIcon ("src/img/bici.png");
        ImageIcon ficha = new ImageIcon ("src/img/fichabici.png");
         ImageIcon datos = new ImageIcon ("src/img/agenda.png");
+
+    public Bicicleta(String rodado, String freno, String cambios, String material, String accesorios) {
+        this.rodado = rodado;
+        this.freno = freno;
+        this.cambios = cambios;
+        this.material = material;
+        this.accesorios = accesorios;
+    }
        
        
    
    //creando los metodos 
-   public void datos(){
+   public void pedirDatos(){
         rodado = (String) JOptionPane.showInputDialog(null, "Ingrese el rodado: ", "Ingreso de datos", JOptionPane.QUESTION_MESSAGE, datos, null, "");
         freno = (String) JOptionPane.showInputDialog(null, "Ingrese el Tipo de freno: ", "Ingreso de datos", JOptionPane.QUESTION_MESSAGE, datos, null, "");
         cambios =(String) JOptionPane.showInputDialog(null, "Cuenta con cambio? Si/No: ", "Ingreso de datos", JOptionPane.QUESTION_MESSAGE, datos, null, "");

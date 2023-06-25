@@ -19,13 +19,22 @@ class Moto {
     
     
     //defino atributos
-    String cilindrada;
-    String transmision;
-    String patente;
-    String color;
+    private String cilindrada;
+    private String transmision;
+    private String patente;
+    private String color;
+
+    public Moto(String cilindrada, String transmision, String patente, String color) {
+        this.cilindrada = cilindrada;
+        this.transmision = transmision;
+        this.patente = patente;
+        this.color = color;
+    }//ejercicio4
+    
+    
     
     //creando los metodos 
-   public void datos(){
+   public void pedirDatos(){
         cilindrada = (String) JOptionPane.showInputDialog(null, "Ingrese la cilindrada: ", "Ingreso de datos", JOptionPane.QUESTION_MESSAGE, datos, null, "");
         
         transmision = (String) JOptionPane.showInputDialog(null, "Ingrese El tipo de transmision: ", "Ingreso de datos", JOptionPane.QUESTION_MESSAGE, datos, null, "");
