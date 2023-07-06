@@ -24,9 +24,11 @@ public class EjercicioEnClase286 extends JFrame {
     //Crear la etiqueta 
         //mensaje de etiqueta
         etiq = new JLabel("HOLA");
-        //ubicaciòn x , y , ancho , alto
+        
+        //Establece la posición (x, y) y las dimensiones (ancho, alto) de la etiqueta
         etiq.setBounds(50,50,250,20);
-      //etiq.setHorizontalAlignment(JLabel.CENTER);
+      
+        //etiq.setHorizontalAlignment(JLabel.CENTER);
         add (etiq);
           
         etiq = new JLabel("Mi nombre es Julian González");
@@ -62,9 +64,9 @@ public class EjercicioEnClase286 extends JFrame {
         //centrar formualio
         ford.setLocationRelativeTo(null);
         //permitir la edicion del tamaño
-        ford.setResizable(true);
+        ford.setResizable(false);
         //titulo
-        ford.setTitle("Presentacion");
+        ford.setTitle("Presentacion de formulario");
         
     }
     
